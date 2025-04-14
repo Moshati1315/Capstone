@@ -22,12 +22,18 @@ Numerical features were standardized using StandardScaler, and categorical varia
 | XGBoost          | 0.8335   | 0.5899  | 1.7839    | 3.5504   | 5.3912    | 20.2368  |
 | Voting Regressor | 0.7760   | 0.5810  | 1.9085    | 3.5799   | 7.2560    | 20.6797  |
 
-📈 Actual vs. Predicted Plot
-(Insert this saved image in your repo: Actual_vs_Predicted_VotingRegressor.png)
+ Actual vs. Predicted Plot
+
+
+![download-4](https://github.com/user-attachments/assets/f03e4943-6dc5-4c85-8750-0f4e06af9899)
+
 This plot shows the predicted GCI values from the Voting Regressor against the actual values. The model captures the overall trend well, especially for schools with average or high outcomes.
 
-📊 Feature Importance (XGBoost)
-(Insert image: Feature_Importance_XGBoost.png)
+ Feature Importance (XGBoost)
+
+
+![download-3](https://github.com/user-attachments/assets/3fc2b494-d59e-4bb2-a677-889679a397f7)
+
 SOL Pass Rate is the most important predictor, followed by Percent Eligible and Chronic Absenteeism Rate, which reflect socioeconomic and engagement challenges.
 
 # Discussion
