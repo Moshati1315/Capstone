@@ -16,10 +16,11 @@ The dataset includes information from public high schools in Virginia. Key varia
 Numerical features were standardized using StandardScaler, and categorical variables (e.g., Poverty Level) were encoded with OneHotEncoder. An Elastic Net model was first used to handle multicollinearity, followed by an XGBoost model to capture non-linear relationships. To balance predictive power and generalization, I implemented a Voting Regressor combining Elastic Net, XGBoost, and Random Forest models. All models were tuned using GridSearchCV with 5-fold cross-validation and evaluated using R², MAE, and MSE.
 
 # Experimental Results
-Model	Train R²	Test R²	Train MAE	Test MAE	Train MSE	Test MSE
-Elastic Net	0.4585	0.4596	2.8656	3.7951	17.5397	26.6663
-XGBoost	0.8335	0.5899	1.7839	3.5504	5.3912	20.2368
-Voting Regressor	0.776	0.581	1.9085	3.5799	7.256	20.6797
+Model	        Train R²	Test R²	Train MAE	 Test MAE    Train MSE	  Test MSE
+Elastic Net	     0.4585	0.4596	 2.8656	    3.7951	     17.5397	 26.6663
+XGBoost   	     0.8335	 0.5899	  1.7839	  3.5504	     5.3912	   20.2368
+Voting Regressor 0.776	 0.581	  1.9085	   3.5799	     7.256	   20.6797
+
 📈 Actual vs. Predicted Plot
 (Insert this saved image in your repo: Actual_vs_Predicted_VotingRegressor.png)
 This plot shows the predicted GCI values from the Voting Regressor against the actual values. The model captures the overall trend well, especially for schools with average or high outcomes.
